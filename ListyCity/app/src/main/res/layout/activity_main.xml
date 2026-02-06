@@ -11,12 +11,32 @@
     <Button
         android:id="@+id/buttonAddCity"
         android:text="Add City"
-        android:textSize="20sp"
+        android:textSize="15sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginStart="10dp"/>
+        android:layout_marginStart="5dp"/>
+
+    <Button
+        android:id="@+id/buttonDeleteCity"
+        android:text="Delete City"
+        android:textSize="15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginEnd="5dp"/>
+    <Button
+        android:id="@+id/buttonEditCity"
+        android:text="Edit City"
+        android:textSize="15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/buttonAddCity"
+        app:layout_constraintEnd_toStartOf="@id/buttonDeleteCity"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginEnd="10dp"/>
 
     <ListView
         android:id="@+id/listviewCities"
